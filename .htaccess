@@ -1,0 +1,50 @@
+RewriteEngine on
+RewriteBase /Voyage/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^liste-des-circuits-([0-9]+)$ index.php?c=circuit_controller&m=index&page=$1 [L]
+
+RewriteRule ^r_controller/apropos$ index.php?c=r_controller&m=apropos [L]
+
+RewriteRule ^r_controller/recherche$ index.php?c=r_controller&m=recherche [L]
+
+RewriteRule ^r_controller/page_login$ index.php?c=r_controller&m=page_login [L]
+
+RewriteRule ^r_controller/page_inscription$ index.php?c=r_controller&m=page_inscription [L]
+
+RewriteRule ^single_controller/circuit/([0-9]+)$ index.php?c=single_controller&m=circuit&id=$1 [L]
+
+RewriteRule ^login_controller$ index.php?c=login_controller&m=index [L]
+
+RewriteRule ^login_controller/logout$ index.php?c=login_controller&m=logout [L]
+
+RewriteRule ^reservation_controller/insertion/([0-9]+)/([a-zA-Z0-9]+)$ index.php?c=reservation_controller&m=insertion&idCirc=$1&idCli=$2 [L]
+
+RewriteRule ^reservation_controller/admin$ index.php?c=reservation_controller&m=admin [L]
+
+RewriteRule ^reservation_controller/supprimer/([0-9]+)$ index.php?c=reservation_controller&m=supprimer&id=$1 [L]
+
+RewriteRule ^reservation_controller/update$ index.php?c=reservation_controller&m=update [L]
+
+RewriteRule ^reservation_controller/insertion$ index.php?c=reservation_controller&m=insertion_admin [L]
+
+RewriteRule ^client_controller/admin$ index.php?c=client_controller&m=admin [L]
+
+RewriteRule ^client_controller/supprimer/([a-zA-Z0-9]+)$ index.php?c=client_controller&m=supprimer&id=$1 [L]
+
+RewriteRule ^client_controller/update$ index.php?c=client_controller&m=update [L]
+
+RewriteRule ^client_controller/insertion$ index.php?c=client_controller&m=insertion [L]
+
+RewriteRule ^circuit_controller/supprimer/([a-zA-Z0-9]+)$ index.php?c=circuit_controller&m=supprimer&id=$1 [L]
+
+RewriteRule ^circuit_controller/admin$ index.php?c=circuit_controller&m=admin [L]
+
+RewriteRule ^circuit_controller/update$ index.php?c=circuit_controller&m=update [L]
+
+RewriteRule ^circuit_controller/insertion$ index.php?c=circuit_controller&m=insertion [L]
+
+RewriteRule ^export_controller/toPdf$ index.php?c=export_controller&m=toPdf [L]
+
+RewriteRule ^wawa$ index.php?c=welcome&m=index [L]
