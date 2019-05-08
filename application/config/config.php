@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 // $config['fonts_path']= "http://localhost/Voyage/system/fonts";
 $config['fonts_path']= "resources/font/";
-$config['base_url'] = 'http://localhost/Voyage/';
+$config['base_url'] = 'https://voyagemadagascar.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
