@@ -82,7 +82,7 @@
 							
 									</div>
 									<p class="caption">
-										Un petit detour entre les chaines du TsingydeBemaraha
+										Un petit detour entre les chaines du TsingideBemaraha
 									</p>
 									<a href="<?php echo base_url('liste-des-circuits-1') ;?>" class="link"><span>Click Me</span></a>
 									<a href="<?php echo base_url('liste-des-circuits-1') ;?>" class="button alt">En voir plus</a>
